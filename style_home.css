@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "poppins";
+    scroll-behavior: smooth;
+}
+
+
+
+body{
+    background-color: black;
+    overflow-x: hidden;
+    max-width: 1960px;
+}
+
+button{
+    font-family: "Torus Notched";
+}
+
+
+
+/*-------------------------------------*/
+
+
+header{
+    height: 120px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute; 
+    margin: 0;
+}
+
+header .container{
+    width: 1500px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .container .logo pre{
+    font-size: 5px;
+    margin-top: 30px;
+    color: #01DD06;
+    position: relative;
+}   
+
+
+header .container ul{
+    display: flex;
+}
+
+@media(max-width: 1500px) {
+    header{
+        position: relative;
+
+    }
+    header .container{
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+header .container ul a{
+    color: #01DD06;
+    font-size: 0.8em;
+    font-weight: 500;
+    margin: 0 30px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+@media(max-width:800px){
+    header .logo{
+        transition: 0.3s;
+        display: none;
+    }
+    header .container{
+        justify-content: center;
+    }
+    header .container ul a{
+        margin: 0 10px;
+    }
+
+}
+
+/*-------------------------------------*/
+
+
+@media(min-width: 1500px){
+    .sec1{
+        height: 100vh;
+        width: 100%;
+
+    }
+}
+
+.sec1 .container{
+    width: 1500px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.sec1 h1{
+    color: #01DD06;
+    font-size: 6em;
+    font-family: 'Alfa Slab One', cursive;
+    margin-bottom: 60px;
+
+}
+
+.sec1 button{
+    position: relative;
+    height: 70px;
+    width: 250px;
+    border-radius: 50px;
+    background-color: black;
+    border: 3px solid #01DD06;
+    font-size: 1em;
+    color: #01DD06;
+    font-family: 'Press Start 2P', cursive;
+    transition: 0.3s;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.sec1 button:hover{
+    color: black;
+    width: 280px;
+    
+}
+
+.sec1 button::before{
+    content: "";
+    position: absolute;
+    height: 70px;
+    width: 280px;
+    background-color: #01DD06;
+    border-radius: 50px;
+    top: -2px;
+    left: -2px;
+    transform: translate(-100%);
+    transition: 0.3s;
+    z-index: -1;
+
+}
+
+.sec1 button:hover::before{
+    transform: translate(0%);
+}
+
+
+
+.sec1 button i{
+    transform: scale(0);
+    margin: -10px;
+    transition: 0.3s ;
+}
+
+.sec1 button:hover i{
+    transform: scale(1);
+    margin-left: 10px;
+
+}
+
+@media(max-width: 1500px) {
+    .sec1 .container{
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .sec1{
+        height: 100%;
+        margin-top: 100px;
+    }
+}
+
+
+/*-------------------------------------*/
+
+.sec2{
+    background-color: black;
+}
+
+.sec2 .title{
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+
+.sec2 .title h1{
+    font-size: 5em;
+    font-family: 'Alfa Slab One', cursive;
+    color: #01DD06;
+}
+
+.sec2 article p{
+    color: #01DD06;
+}
+
+
+
+/*-------------------------------------*/
+
+.sec3 .title h1{
+    font-size: 5em;
+    font-family: 'Alfa Slab One', cursive;
+    color: #01DD06;
+}
+
+.sec3 article p{
+    color: #01DD06;
+}
+
+
+
+
+
+/*-------------------------------------*/
+
+.sec4 .title h1{
+    font-size: 5em;
+    font-family: 'Alfa Slab One', cursive;
+    color: #01DD06;
+}
+
+.sec4 article p{
+    color: #01DD06;
+}
+
+
