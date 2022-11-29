@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
 
 *{
     margin: 0;
@@ -35,6 +35,9 @@ header{
     left: 0;
     position: absolute; 
     margin: 0;
+    position: fixed;
+    background-color: black;
+    z-index: 3;
 }
 
 header .container{
@@ -49,7 +52,7 @@ header .container{
 
 header .container .logo pre{
     font-size: 5px;
-    margin-top: 30px;
+    margin-top: 20px;
     color: #01DD06;
     position: relative;
 }   
@@ -201,45 +204,65 @@ header .container ul a{
     text-align: center;
 }
 
-
 .sec2 .title h1{
+    display: flex;
+    position: relative;
+    width: 100%;
     font-size: 5em;
     font-family: 'Alfa Slab One', cursive;
     color: #01DD06;
-}
-
-.sec2 article p{
-    color: #01DD06;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-type: x mandatory;
 }
 
 
 
 /*-------------------------------------*/
 
-.sec3 .title h1{
+.sec3{
+    background-color: black;
+}
+
+.sec3 .container{
+    position: relative;
+    width: 1500px;
+    margin: 0 auto;
+
+}
+
+
+
+.sec3 .content1, .content2, .content3, .content4, .content5{
+    max-width: 1500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #01DD06;
+
+
+}
+.sec3 .container h2{
+    font-family: 'Rubik Glitch', cursive;
     font-size: 5em;
-    font-family: 'Alfa Slab One', cursive;
-    color: #01DD06;
-}
-
-.sec3 article p{
-    color: #01DD06;
 }
 
 
-
+.sec3 .container .material-symbols-outlined {
+    font-size: 5em;
+    margin-top: 10px;
+    font-variation-settings:
+  'FILL' 0,
+  'wght' 700,
+  'GRAD' 0,
+  'opsz' 48
+}
 
 
 /*-------------------------------------*/
 
-.sec4 .title h1{
-    font-size: 5em;
-    font-family: 'Alfa Slab One', cursive;
-    color: #01DD06;
-}
-
-.sec4 article p{
-    color: #01DD06;
-}
 
 
