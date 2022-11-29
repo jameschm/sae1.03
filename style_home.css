@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
 
 *{
     margin: 0;
@@ -14,9 +16,13 @@
 
 
 body{
-    background-color: black;
     overflow-x: hidden;
     max-width: 1960px;
+    background-color: black;
+}
+
+body::-webkit-scrollbar{
+    display: none;
 }
 
 button{
@@ -97,6 +103,9 @@ header .container ul a{
 
 /*-------------------------------------*/
 
+.sec1{
+    background-color: black;
+}
 
 @media(min-width: 1500px){
     .sec1{
@@ -194,17 +203,17 @@ header .container ul a{
 
 /*-------------------------------------*/
 
-.sec2{
+.sec2, .sec4, .sec6{
     background-color: black;
 }
 
-.sec2 .title{
+.sec2 .title, .sec4 .title, .sec6 .title{
     width: 100%;
     position: relative;
     text-align: center;
 }
 
-.sec2 .title h1{
+.sec2 .title h1, .sec4 .title h1, .sec6 .title h1{
     display: flex;
     position: relative;
     width: 100%;
@@ -221,16 +230,16 @@ header .container ul a{
 
 /*-------------------------------------*/
 
-.sec3{
+.sec3, .sec5{
     background-color: black;
 }
-
-.sec3 .container{
+.sec3 .container, .sec5 .container{
     position: relative;
     width: 1500px;
     margin: 0 auto;
-
+    color: #01DD06;
 }
+
 
 
 
@@ -240,18 +249,17 @@ header .container ul a{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    color: #01DD06;
-
+    
 
 }
-.sec3 .container h2{
+.sec3 .container h2,.sec5 .container h2{
     font-family: 'Rubik Glitch', cursive;
     font-size: 5em;
 }
 
 
-.sec3 .container .material-symbols-outlined {
+
+.sec3 .container .material-symbols-outlined, .sec5 .container .material-symbols-outlined {
     font-size: 5em;
     margin-top: 10px;
     font-variation-settings:
@@ -261,8 +269,72 @@ header .container ul a{
   'opsz' 48
 }
 
+.sec3 .container p,.sec5 .container p{
+    font-size: 2em;
+    font-family: 'Source Code Pro', monospace;
+}
+.sec3 .content1{
+    height: 100vh;
+}
 
-/*-------------------------------------*/
+.sec3 .content2{
+    height: 100vh;
+}
+.sec3 .content3{
+    height: 100vh;
+}
+.sec3 .content5{
+    height: 100vh;
+}
+
+
+.sec5{
+    height: 100vh;
+}
+
+.sec5 .text{
+    height: 100vh;
+
+}
+.sec5 h2{
+    align-items: center;
+    justify-content: center;
+}
+.sec6{
+    margin-top: 30%;
+}
+
+.sec7 .container{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.sec7 .cc img{
+    width: 264px;
+    height: 200px;
+}
+.sec7 .c img{
+    width: 200px;
+    height: 200px;
+}
+
+footer h1{
+    font-size: 3em;
+    color: #01DD06;
+    font-family: 'Press Start 2P', cursive;
+
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
 
 
 
