@@ -237,9 +237,12 @@ header .container ul a{
     position: relative;
     width: 1500px;
     margin: 0 auto;
-    color: #01DD06;
 }
 
+.sec3 .container .left1 i{
+    width: 400px;
+    height: 430px;
+}
 
 
 
@@ -255,6 +258,7 @@ header .container ul a{
 .sec3 .container h2,.sec5 .container h2{
     font-family: 'Rubik Glitch', cursive;
     font-size: 5em;
+    color: #01DD06;
 }
 
 
@@ -272,6 +276,7 @@ header .container ul a{
 .sec3 .container p,.sec5 .container p{
     font-size: 2em;
     font-family: 'Source Code Pro', monospace;
+    color: #01DD06;
 }
 .sec3 .content1{
     height: 100vh;
@@ -301,7 +306,7 @@ header .container ul a{
     justify-content: center;
 }
 .sec6{
-    margin-top: 30%;
+    margin-top: 50%;
 }
 
 .sec7 .container{
